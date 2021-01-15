@@ -37,7 +37,8 @@ app.get(function(req, res, next){
 
 mongoose.set('useUnifiedTopology', true);
 //mongodb://localhost/Yelp_Camp_v12
-mongoose.connect("mongodb+srv://marcel-gola:kubusX3456@yelpcamp.3dakb.mongodb.net/test", { useNewUrlParser: true } );
+//mongodb+srv://marcel-gola:kubusX3456@yelpcamp.3dakb.mongodb.net/test
+mongoose.connect("mongodb://localhost/Yelp_Camp_v12", { useNewUrlParser: true } );
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
