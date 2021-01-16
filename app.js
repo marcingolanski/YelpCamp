@@ -67,7 +67,7 @@ function isLoggedIn(req, res, next){
 }
 const port = process.env.PORT || 3000;
 
-app.listen(PORT, () => { 
+app.listen(port, () => { 
   console.log('Serving on port ${port}');
 });
 
