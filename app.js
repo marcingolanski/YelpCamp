@@ -65,7 +65,15 @@ function isLoggedIn(req, res, next){
     }
     res.redirect("/login");
 }
+const port = process.env.PORT || 3000;
 
+app.listen(PORT, () => { 
+  console.log('Serving on port ${port}');
+});
+
+/*
 app.listen(3000, function() { 
   console.log("The Yelp Camp Server Just Started");
 });
+
+*/
